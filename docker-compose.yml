@@ -1,5 +1,5 @@
 todoweb:
-  build: ./nowdoit-web
+  build: ./todo-web
   ports:
     - "80:80"
   links:
@@ -7,19 +7,19 @@ todoweb:
    - todoserver2:todoserver2
    - todoserver3:todoserver3
 todoserver1:
-  build: ./nowdoit-server
+  build: ./todo-server
   ports:
     - "8000"
   links:
    - todomongodb
 todoserver2:
-  build: ./nowdoit-server
+  build: ./todo-server
   ports:
     - "8000"
   links:
    - todomongodb
 todoserver3:
-  build: ./nowdoit-server
+  build: ./todo-server
   ports:
     - "8000"
   links:
