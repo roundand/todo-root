@@ -1,23 +1,27 @@
-# requires installation of docker and docker-compose
-#
-# master file to build and launch docker containers for
-#   https://github.com/roundand/todo-server
-#   https://github.com/roundand/todo-web
-#
-# We can iteratively kill / build / launch / test from the command line with:
-#
-# docker-compose kill && docker-compose build && docker-compose up -d && curl 127.0.0.1/todo
-#
 todoweb:
-  build: ./todo-web
+  build: ./nowdoit-web
   ports:
     - "80:80"
   links:
-   - todoserver
-todoserver:
-  build: ./todo-server
+   - todoserver1:todoserver1
+   - todoserver2:todoserver2
+   - todoserver3:todoserver3
+todoserver1:
+  build: ./nowdoit-server
   ports:
-    - "8000:8000"
+    - "8000"
+  links:
+   - todomongodb
+todoserver2:
+  build: ./nowdoit-server
+  ports:
+    - "8000"
+  links:
+   - todomongodb
+todoserver3:
+  build: ./nowdoit-server
+  ports:
+    - "8000"
   links:
    - todomongodb
 todomongodb:
