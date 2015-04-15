@@ -6,8 +6,8 @@ To build the system
 - open a bash command line in the directory:
 
 ```
-todo-root$ git clone git@github.com:roundand/todo-root.git .
-todo-root$ build-todo.sh
+todo-root$ git clone https://github.com/roundand/todo-root.git .
+todo-root$ ./build-todo.sh
 ```
 
 To use, test from the command line with:
