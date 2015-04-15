@@ -1,6 +1,6 @@
 #!/bin/bash
-git clone git@github.com:roundand/todo-web.git ./todo-web
-git clone git@github.com:roundand/todo-server.git ./todo-server
+git clone https://github.com/roundand/todo-web.git ./todo-web
+git clone https://github.com/roundand/todo-server.git ./todo-server
 docker-compose kill
 docker-compose build
 sleep 30
