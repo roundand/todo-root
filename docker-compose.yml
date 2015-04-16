@@ -26,3 +26,9 @@ todoserver3:
    - todomongodb
 todomongodb:
   image: mongo
+todomongoui:
+  image: knickers/mongo-express
+  links:
+   - todomongodb:mongo
+  ports: 
+   - "8081:8081"
