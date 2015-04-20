@@ -1,5 +1,6 @@
 # todo-root
-Fetch, build and deploy a todo app composed of three docker images
+Fetch, build and deploy a todo app composed of five docker images
+![Architecture Diagram](/svg/Docker-NginxNodeMongo.svg "Architecture Diagram")
 
 To build the system
 - create an empty directory, eg todo-root
