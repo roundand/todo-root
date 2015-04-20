@@ -1,6 +1,6 @@
 # todo-root
-Fetch, build and deploy a todo app composed of five docker images
-![Architecture Diagram](/svg/Docker-NginxNodeMongo.svg "Architecture Diagram")
+Fetch, build and deploy a todo app composed of six docker images, exposing two of them via host ports 80 (todo-web) an 80801 (mongo-ui).
+![Architecture Diagram](/img/Docker-NginxNodeMongo.png "Architecture Diagram")
 
 To build the system
 - create an empty directory, eg todo-root
