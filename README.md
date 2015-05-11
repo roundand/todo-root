@@ -1,6 +1,8 @@
 # todo-root
-Fetch, build and deploy a todo app composed of six docker images, exposing two of them via host ports 80 (todo-web) an 80801 (mongo-ui).
+Fetch, build and deploy a todo app composed of six docker images, exposing two of them via host ports 80 (todo-web) and 80801 (mongo-ui).
 ![Architecture Diagram](/img/Docker-NginxNodeMongo.png "Architecture Diagram")
+
+The web client and server use socket.io so when two clients are viewing the same list (currently there is only one list!) updates from either are automatically pushed to the other.
 
 To build the system
 - install docker and docker-compose
