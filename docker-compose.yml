@@ -12,12 +12,16 @@ todoserver1:
     - "8000"
   links:
    - todomongodb
+  env_file:
+   - proxies.env
 todoserver2:
   build: ./todo-server
   ports:
     - "8000"
   links:
    - todomongodb
+  env_file:
+   - proxies.env
 todoserver3:
   build: ./todo-server
   ports:
