@@ -28,6 +28,8 @@ todoserver3:
     - "8000"
   links:
    - todomongodb
+  env_file:
+   - proxies.env
 todomongodb:
   image: mongo
 todomongoui:
