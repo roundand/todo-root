@@ -1,5 +1,6 @@
 todoweb:
-  build: ./todo-web
+#  build: ./todo-web
+  image: roundand/todo-web:v1
   ports:
     - "80:80"
   links:
