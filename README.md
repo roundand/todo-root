@@ -11,7 +11,7 @@ To build the system
 
 ```
 todo-root$ git clone https://github.com/roundand/todo-root.git .
-todo-root$ ./build-todo.sh
+todo-root$ sudo ./build-todo.sh # sudo needed unless you've prevoously done: sudo usermod -aG docker <yourUserId>
 ```
 
 To use, test from the command line with:
