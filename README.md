@@ -17,6 +17,7 @@ todo-root$ sudo ./build-todo.sh # sudo needed unless you've prevoously done: sud
 To use, test from the command line with:
 - from Bash, run: curl 127.0.0.1/todo
 - from a browser, open the ReactJS UI: http://127.0.0.1/index.html
+- to browse the back-end DB, http://localhost:8081/
 
 To run Automated Tests
 - start as usual, with `docker-compose up -d`
